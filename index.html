@@ -1,0 +1,45 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="contact">
+        <h1>Contact</h1>
+
+        <input type="text" id="nomeid" placeholder="Insira seu nome" required="required" name="nome" />
+        <label for="name">Nome</label>
+
+        <input type="tel" id="foneid"
+        placeholder="(xx)xxxx-xxxx" required="required" name="fone" />
+        <label for="fone">Telefone</label>
+
+        <input type="text" name="cep" id="cep" volue="" size="10" maxlength="9" onblur="pesquisacep(this.value)"/>
+        <label>Cep</label>
+
+        <input type="text" name="rua" id="cep" size="60" required="requred" />
+        <label>Logradouro</label>
+
+        <input type="text" name="bairro" id="bairro" size="40" required="required"/>
+        <label>Bairro</label>
+
+        <input type="text" name="cidade" id="cidade" size="40" required="required"/>
+        <label>Cidade</label>
+
+        <input type="text" name="uf" id="uf" size="2" required="required"/>
+        <label>UF</label>
+
+        <textarea placeholder="Insert your comments"></textarea>
+
+        <input type="submit" class="enviar" onclick="enviar();" volue="Send">
+
+    </form>
+     <script> src="forms.js"</script>
+
+    
+
+</body>
+</html>
